@@ -7,15 +7,15 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 /* Colors
       Light Gray: #ebebeb
-      Dark Blue: #435160
-         Shadow: #343d4a
-      Winthrop Blue: #667c93
+      Dark Blue: #4b6d82
+         Shadow: #3D5869
+      Winthrop Blue: #618eaa
 */
 
 /* HTML Elements*/
 
 body {
-   border-top: solid 5px #435160;
+   border-top: solid 5px #4b6d82;
    font-family: 'PT Sans', sans-serif;
    padding-top: 0;
 }
@@ -24,14 +24,14 @@ hr {
    padding-bottom: 10px;
 }
 a {
-   color: #667c93;
+   color: #618eaa;
 }
 /* Universal Styles*/
 .btn-primary {
-   background: #435160 none;
+   background: #4b6d82 none;
    box-shadow: none;
       -webkit-box-shadow: none;
-   border-color: #343d4a;
+   border-color: #3D5869;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -40,8 +40,16 @@ a {
 .btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
    color: #fff;
-   background-color: #343d4a;
+   background-color: #3D5869;
    border-color: #2e3744;
+}
+.custom-container {
+   padding-left: 0;
+   padding-right: 0;
+}
+.text-center {
+   text-align: center;
+   width: 100%;
 }
 /* Header */
 
@@ -58,8 +66,13 @@ a {
 
 .navbar-static-top .navbar-brand {
    position: relative;
-      top: 20px;
+      top: -5px;
    width: 100%;
+}
+
+.navbar-static-top .navbar-brand .logo {
+   margin: auto;
+   width: 200px;
 }
 
 .navbar-static-top .btn-primary {
@@ -75,23 +88,25 @@ a {
 
 /* Navigation */
 
+.navbar-static-top .navbar-background {
+   background: #618eaa;
+   position: relative;
+      top: 23px;
+}
+
 .navbar-static-top .navbar-nav {
-   background: #667c93;
-   padding: 0px 71px;
-   position: absolute;
-      left: 0;
-      right: 0;
-      top: 99px;
+   height: 45px;
+   width: 100%;
 }
 
 .navbar-static-top .navbar-nav li {
-   width: 16.66666667%;
+   width: 25%;
 }
 
 .navbar-static-top .navbar-nav li > a {
    color: #ffffff;
    letter-spacing: 0.5px;
-   padding: 16px 15px;
+   padding: 12.5px 15px;
    text-transform: uppercase;
 }
 
@@ -117,6 +132,9 @@ a {
 }
 
 .jumbotron .btn-primary {
+   border-color: transparent;
+   font-size: 16px;
+   padding: 12px 45px;
    text-transform: uppercase;
 }
 
@@ -127,8 +145,8 @@ a {
 }
 
 .letter h4 {
-   border-bottom: 1px solid #435160;
-   color: #435160;
+   border-bottom: 1px solid #4b6d82;
+   color: #4b6d82;
    display: inline-block;
    padding: 0 3px;
    text-transform: uppercase;
@@ -144,15 +162,57 @@ a {
 }
 
 .letter .profile {
-   border-left: solid 1px #435160;
+   border-left: solid 1px #4b6d82;
    margin: 0 25px;
    padding-left: 15px;
 }
 
+/* Events Page */
+
+.well-calendar {
+   background: #FFFDFD none;
+}
+
+.pagination {
+   float: right;
+}
+
+.list > li {
+   background-color: #aaa;
+   color: #ffffff;
+   display: inline-block;
+   padding: 8px 15px;
+}
+
+.list > li:hover {
+   background-color: #3D5869;
+   cursor: pointer;
+}
+
+.list > li.active {
+   background-color: #4b6d82;
+}
+
+.modal .modal-header {
+   background-color: #4b6d82;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+
+/* News Page */
+
+.panel .btn-default {
+   float: right;
+}
+
+.lazy-loader {
+   margin: 20px 0;
+   text-align: center;
+}
 /* Footer */
 
 footer {
-   background-color: #435160;
+   background-color: #4b6d82;
    padding: 25px 15px 15px 15px;
 }
 footer p {
