@@ -1,0 +1,176 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+/* Colors
+      Light Gray: #ebebeb
+      Dark Blue: #435160
+         Shadow: #343d4a
+      Winthrop Blue: #667c93
+*/
+
+/* HTML Elements*/
+
+body {
+   border-top: solid 5px #435160;
+   font-family: 'PT Sans', sans-serif;
+   padding-top: 0;
+}
+hr {
+   margin-top: 60px;
+   padding-bottom: 10px;
+}
+a {
+   color: #667c93;
+}
+/* Universal Styles*/
+.btn-primary {
+   background: #435160 none;
+   box-shadow: none;
+      -webkit-box-shadow: none;
+   border-color: #343d4a;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+   color: #fff;
+   background-color: #343d4a;
+   border-color: #2e3744;
+}
+/* Header */
+
+.navbar-static-top {
+   background-color: #ebebeb;
+   height: 150px;
+   margin-bottom: 0;
+}
+
+.navbar-static-top .navbar-header {
+   text-align: center;
+   width: 100%;
+}
+
+.navbar-static-top .navbar-brand {
+   position: relative;
+      top: 20px;
+   width: 100%;
+}
+
+.navbar-static-top .btn-primary {
+   border: none;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+   float: right;
+   padding: 6px 20px;
+   position: relative;
+      bottom: 50px;
+      right: 57px;
+}
+
+/* Navigation */
+
+.navbar-static-top .navbar-nav {
+   background: #667c93;
+   padding: 0px 71px;
+   position: absolute;
+      left: 0;
+      right: 0;
+      top: 99px;
+}
+
+.navbar-static-top .navbar-nav li {
+   width: 16.66666667%;
+}
+
+.navbar-static-top .navbar-nav li > a {
+   color: #ffffff;
+   letter-spacing: 0.5px;
+   padding: 16px 15px;
+   text-transform: uppercase;
+}
+
+.navbar-static-top .navbar-nav li > a:hover,
+.navbar-static-top .navbar-nav li > a:focus {
+   background-color: #526378;
+}
+
+/* Jumbotron */
+
+.container .jumbotron {
+   border-radius: 0;
+}
+.jumbotron {
+   background-color: #959595;
+   text-align: center;
+}
+
+.jumbotron h3 {
+   color: #ffffff;
+   padding: 20px 0 90px 0;
+   text-transform: uppercase;
+}
+
+.jumbotron .btn-primary {
+   text-transform: uppercase;
+}
+
+/* Well Letter */
+
+.letter {
+   margin: 45px 0;
+}
+
+.letter h4 {
+   border-bottom: 1px solid #435160;
+   color: #435160;
+   display: inline-block;
+   padding: 0 3px;
+   text-transform: uppercase;
+}
+
+.letter p > a {
+   text-decoration: underline;
+}
+
+.letter .profile-image {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.letter .profile {
+   border-left: solid 1px #435160;
+   margin: 0 25px;
+   padding-left: 15px;
+}
+
+/* Footer */
+
+footer {
+   background-color: #435160;
+   padding: 25px 15px 15px 15px;
+}
+footer p {
+   color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
