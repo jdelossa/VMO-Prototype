@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>News</title>
+        <title>Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -16,38 +16,54 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <!-- Calendar -->
+
+         <script type="text/javascript">
+            $(document).ready(function() {
+                // page is now ready, initialize the calendar...
+                $('#calendar').fullCalendar({
+                    // put your options and callbacks here
+                })
+            });
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/moment/min/moment.min.js"></script>
+        <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
     </head>
-    <body>
+    <body class="news-page">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <div class="status-bar">
+        <div class="container">
+            <a href="#">Sign In</a>
+        </div>  
+    </div>
     <!-- Nav -->
-    <nav class="navbar navbar-static-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img class="logo"src="images/logo.png" alt="Winthrop Logo"></a>
-                <a href="#" class="btn btn-primary">Sign In</a>
+                <a class="navbar-brand" href="index.html"><img class="logo"src="images/logo.png" alt="Winthrop Logo">
+                    <span class="title">Medical Staff Portal</span></a>
             </div>
-        </div><!-- /.container-fluid -->
 
-        <div class="container-fluid custom-container navbar-background">
-                <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="container ">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                </div>
-            </div><!-- /.navbar-collapse -->
-        </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div><!-- /.container-fluid -->
     </nav>
     <!-- End Nav -->
 
-    <div class="container">
+    <div id="contain" class="container">
       <div class="row">
             <div class="col-sm-12">
                 <div class="page-header">
@@ -57,87 +73,63 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-md-9">
                 <!-- Row 1 -->
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="panel panel-default">
-                          <div class="panel-body">
-                            <div class="col-sm-4">
-                                <img src="http://placehold.it/225x225">
-                            </div>
+                    <div class="col-sm-4">
+                        <a href="single-news.html"><img src="http://placehold.it/225x225"></a>
+                    </div>
 
-                            <div class="col-sm-8">
-                                <h4>Event Title</h4>
-                                <a href="single-news.html" class="btn btn-default read-more">Read More &raquo;</a>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="col-sm-8">
+                        <a href="single-news.html"><h3>Article Title</h3></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ...</p>
                     </div>
                 </div>
-
+                <hr>
                 <!-- Row 2 -->
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="panel panel-default">
-                          <div class="panel-body">
-                            <div class="col-sm-4">
-                                <img src="http://placehold.it/225x225">
-                            </div>
+                    <div class="col-sm-4">
+                        <a href="single-news.html"><img src="http://placehold.it/225x225"></a>
+                    </div>
 
-                            <div class="col-sm-8">
-                                <h4>Event Title</h4>
-                                <a href="single-news.html" class="btn btn-default read-more">Read More &raquo;</a>
-                            </div>
-                          </div>
+                    <div class="col-sm-8">
+                        <a href="single-news.html"><h3>Article Title</h3></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ...</p>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="pagination">
+                            <ol class="list">
+                                <li class="active">First</li>
+                                <li>2</li>
+                                <li>3</li>
+                                ...
+                                <li>Last</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
 
-                <!-- Row 3 -->
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="panel panel-default">
-                          <div class="panel-body">
-                            <div class="col-sm-4">
-                                <img src="http://placehold.it/225x225">
-                            </div>
-
-                            <div class="col-sm-8">
-                                <h4>Event Title</h4>
-                                <a href="single-news.html" class="btn btn-default read-more">Read More &raquo;</a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lazy Loader -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="lazy-loader">
-                            <a class="btn btn-primary" href="#">Load More</a>
-                        </div>  
-                    </div>
-                </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <div class="well">
-                    <a class="btn btn-primary text-center">Join Winthrop</a>
                     <h4>Recent</h4>
                     <ul>
-                        <li>News story 1</li>
-                        <li>News story 2</li>
-                        <li>News story 3</li>
-                        <li>News story 4</li>
+                        <li><a href="#">News story 1</a></li>
+                        <li><a href="#">News story 2</a></li>
+                        <li><a href="#">News story 3</a></li>
+                        <li><a href="#">News story 4</a></li>
                     </ul>
+                    <br>
                     <h4>Archived</h4>
                     <ul>
-                        <li>News story 1</li>
-                        <li>News story 2</li>
-                        <li>News story 3</li>
-                        <li>News story 4</li>
+                        <li><a href="#">News story 1</a></li>
+                        <li><a href="#">News story 2</a></li>
+                        <li><a href="#">News story 3</a></li>
+                        <li><a href="#">News story 4</a></li>
                     </ul>
                 </div>
             </div>
@@ -145,8 +137,58 @@
     </div> <!-- /container -->
 
     <footer>
-        <div class="container-fluid">
-            <p>&copy; Winthrop-University Hospital 2015</p>
+        <div id="contact" class="container"> 
+            <!-- Contact -->
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Contact Us</h3><hr>
+                </div>
+            </div>
+
+            <div  class="row">
+                <div class="col-sm-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Huis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <br>
+                    <p><strong>Address: </strong>Winthrop-University Hospital <br>
+                        259 First Street <br>
+                        Mineola NY 11501
+                    </p>
+                    <p><strong>Phone: </strong><a href="#">516-663-1756</a></p>
+                    <p><strong>Email: </strong><a href="#">vmo@winthrop.org</a></p>
+                </div>
+
+                <div class="col-sm-4">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name-input" placeholder="Your Name *">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email-input" placeholder="Email *">
+                        </div>
+
+                        <div class="form-group">
+                            <select id="reason"class="form-control">
+                              <option>I want to join</option>
+                              <option>I have a question</option>
+                              <option>I have a concern</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="comments" placeholder="Comment" rows="3"></textarea>
+                        </div>
+                     
+                   
+                          <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <br>
+                    <br>
+                </div>
+            </div>      
+            <hr>
+            <p class="pull-left">&copy; Winthrop-University Hospital 2015</p>
+            <p class="pull-right" style="text-decoration: underline;"> Privacy Policy</p>
         </div>
     </footer>
 
