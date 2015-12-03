@@ -233,6 +233,10 @@ a {
    margin-bottom: 20px;
 }
 
+.letter .profile-image img {
+   width: 100%;
+}
+
 .letter .profile {
    border-left: solid 2px #3E7698;
    padding-left: 15px;
@@ -417,6 +421,9 @@ footer p {
    .letter .profile-image {
       text-align: center;
    }
+   .letter .profile-image img {
+      width: 250px;
+   }
    #news .single-news {
       padding-left: 10px;
       top: 0;
@@ -485,6 +492,9 @@ footer p {
 }
 
 @media (max-width: 480px) {
+   .letter .profile-image img {
+      width: 200px;
+   }
     #events .date {
       font-size: 20px;
    }
