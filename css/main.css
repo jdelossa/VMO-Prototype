@@ -204,7 +204,7 @@ a {
    background: url('../images/winthrop-doctors.jpg');
    background-position: center;
    background-size: cover;
-      -ms-behavior: url('../backgroundsize.min.htc'); 
+      -ms-behavior: url(../backgroundsize.min.htc); 
    position: relative;
    height: 400px;
     
