@@ -18,22 +18,6 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <!-- Calendar -->
-
-         <script type="text/javascript">
-            $(document).ready(function() {
-                // page is now ready, initialize the calendar...
-                $('#calendar').fullCalendar({
-                    // put your options and callbacks here
-                })
-            });
-        </script>
-
-        <link rel="stylesheet" type="text/css" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/moment/min/moment.min.js"></script>
-        <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
     </head>
     <body class="news-page">
         <!--[if lt IE 8]>
@@ -77,11 +61,6 @@
                 <!-- Row 1 -->
                 <div class="row">
                     <div class="col-sm-12">
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
                         <a href="single-news.html"><h3>Pacemaker Fall 2015</h3></a>
                         <a href="single-news.html"><img class="news-image" src="images/wuh-magnet.jpg"></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ...</p>
@@ -102,11 +81,6 @@
                 </div>
                 <hr>
                 <!-- Row 3 -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <a href="single-news.html"><h3>Christmas Party At CJ's</h3></a>
@@ -145,7 +119,7 @@
 
             </div>
             <div class="col-md-3">
-                <div class="well">
+                <div id="sidebar" class="well">
                     <h4>Recent</h4>
                     <ul>
                         <li><a href="#">News story 1</a></li>

@@ -172,6 +172,10 @@ a {
       top: 26px;
 }
 
+.navbar-fixed-top .navbar-nav li {
+   padding-left: 5px;
+}
+
 .navbar-fixed-top .navbar-nav li > a {
    color: #3E7698;
    letter-spacing: 0.5px;
@@ -199,9 +203,11 @@ a {
 .jumbotron {
    background: url('../images/winthrop-doctors.jpg');
    background-position: center;
-   background-size: cover; 
+   background-size: cover;
+      -ms-behavior: url('../backgroundsize.min.htc'); 
    position: relative;
-   height: 500px;
+   height: 400px;
+    
 }
 
 .jumbotron h3 {
@@ -263,9 +269,11 @@ a {
 
 /* Custom home page panels */
 
-.panel-custom .panel-heading {
-   background: #3E7698;
+.panel-custom .panel-heading,
+#home .panel-default > .panel-heading {
+   background: #3E7698 !important;
    border-bottom: none;
+   filter: none;
 }
 
 .panel-custom .panel-heading a {
@@ -327,9 +335,22 @@ a {
 }
 
 /* Events Page */
+
+.events .nav-tabs > li {
+   float: right;
+}
+.events .tab-content {
+   padding-top: 15px;
+}
 .event-modal:hover,
 .event-modal:active {
    text-decoration: none;
+}
+
+.events .modal-body h4 {
+   border-bottom: solid 1px #3E7698;
+   color: #3E7698;
+   display: inline-block;
 }
 
 .events .panel-event .panel-body {
@@ -348,6 +369,7 @@ a {
 
 .events .well-calendar {
    background: #FFFDFD none;
+   filter: none;
 }
 
 /*Event Page Modal */
@@ -358,6 +380,8 @@ a {
 }
 
 .event-modal-lg .modal-body .date {
+   background-color: #eeeeee;
+   padding: 10px 0;
    text-align: center;
 }
 
@@ -446,12 +470,6 @@ footer p {
    #news .single-news {
       padding-left: 10px;
       top: 0;
-   }
-}
-
-@media (min-width: 991px) {
-   .news-page .well {
-      height: 600px;
    }
 }
 
