@@ -341,7 +341,7 @@ a {
 .panel-custom .panel-body .panel-row {
    border-bottom: solid 1px #ddd;
    color: #767676;
-   margin: 0;
+   margin: 15px 0;
 }
 
 .panel-custom .panel-body .panel-row a {
@@ -354,16 +354,6 @@ a {
    text-decoration: none;
 }
 
-.panel-custom .panel-body .panel-row span.title {
-   font-size: 18px;
-   margin-top: 10px;
-   margin-bottom: 20px;
-}
-.panel-custom .panel-body .panel-row span.description {
-   display: block;
-   font-size: 12px;
-   margin-top: 10px;
-}
 .panel-custom .panel-body .panel-row:last-child {
    border-bottom: none;
 }
@@ -379,22 +369,17 @@ a {
    float: left;
    font-size: 24px;
    font-weight: 600;
+   line-height: 30px;
+   padding: 10px;
    text-align: center;
-   width: 25%;
 }
 
 /* News Panel */
-
-#news .news {
-   padding: 10px 0 15px 0px;
-}
 #news .news-image {
    height: 60px;
    float: left;
-   margin-right: 5%;
-   margin-top: 5px;
-   text-align: center;
-   width: 20%;
+   margin: 10px 0;
+   width: 90px;
 }
 
 /* Events Page */
@@ -606,16 +591,6 @@ footer p {
 
 /* Media Queries */
 
-@media (max-width: 1200px) {
-   #events .date {
-      margin-right: 4%;
-      width: 11%;
-   }
-   #news .news-image {
-      margin-right: 5%;
-      width: 13%;
-   }
-}
 
 @media (max-width: 991px) {
    .panel-custom { 
@@ -642,6 +617,9 @@ footer p {
    .events #events-list .sidebar {
       border-left: none;
    }
+   .navbar-fixed-top .navbar-nav li > a{
+      padding: 10.5px 10px;
+   } 
 }
 
 @media (max-width: 767px) {
@@ -669,19 +647,6 @@ footer p {
    }
    .jumbotron {
       height: 325px;
-   }
-   #news .news-image {
-      margin-right: 5%;
-      width: 25%;
-   }
-   #news .description {
-      margin-left: 30%;
-   }
-   .events #events-list .event span.date {
-      width: 25%;
-   }
-   .events #events-list .event span.description {
-      margin-left: 25%;
    }
    .nav-tabs, #events-calendar {
       display: none;
