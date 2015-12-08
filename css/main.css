@@ -549,6 +549,19 @@ a {
    width: 30%;
 }
 
+#sidebar {
+   width: 250px;
+}
+
+#sidebar.affix {
+   position: fixed;
+      top: 150px;
+}
+
+#sidebar.affix-top {
+   bottom: 0;
+}
+
 /* Single News Page */
 
 .single-news .content {
