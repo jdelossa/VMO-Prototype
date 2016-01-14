@@ -21,7 +21,7 @@
 body {
    background-color: #ebebeb;
    font-family: 'PT Sans', sans-serif;
-   padding-top: 155px;
+   padding-top: 185px;
    -webkit-font-smoothing: antialiased;
 }
 hr {
@@ -135,29 +135,38 @@ a {
 
 .status-bar {
    background-color: #3E7698;
-   height: 25px;
+   height: 5px;
    position: fixed;
       top: 0;
    width: 100%;
    z-index: 1040;
 }
-.status-bar a  {
-   color: #ffffff;
-   float: right;
-   line-height: 25px;
-   text-transform: uppercase;
-}
-.status-bar a {
-   text-decoration: none;
-}
 /* Header (Logo and Title)*/
 
 .navbar-fixed-top {
    background-color: #ffffff;
-   border-bottom: solid 1px #3E7698;
-   height: 100px;
+   height: 160px;
    margin-bottom: 0;
-   top: 25px;
+}
+.navbar-fixed-top .header-btn .btn-default {
+   color: #ffffff;
+   font-weight: 600;
+   letter-spacing: 0.4px;
+   padding: 8px 25px;
+   position: relative;
+      top: 30px;
+}
+.navbar-fixed-top .header-btn .btn-default:first-child {
+   margin-right: 20px;
+}
+.navbar-fixed-top .header-btn .find-doctor {
+   background: #2d6283;
+   border-color: #285470;
+}
+
+.navbar-fixed-top .header-btn .member-login {
+   background: #3b759a;
+   border-color: #356587;
 }
 
 .navbar-fixed-top .navbar-header {
@@ -188,9 +197,9 @@ a {
 /* Navigation */
 
 .navbar-fixed-top .navbar-nav {
-   float: right;
+   float: left;
    position: relative;
-      top: 26px;
+      top: 55px;
 }
 
 .navbar-fixed-top .navbar-nav li {
