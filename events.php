@@ -2,7 +2,7 @@
     include("includes/header.php");
 ?>
 
-    <div id="contain" class="container">
+    <div id="contain" class="container events">
 
         <div class="page-header">
             <h2>Events</h2>

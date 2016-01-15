@@ -40,17 +40,10 @@ a {
    background-color: #ffffff;
    padding-top: 15px;
    margin-bottom: 50px;
+   border-top: 3px solid #3E7698;
 }
 
-.events #contain, 
-.news-page #contain,
-.single-news #contain {
-   border-top: 3px solid #3E7698;
-   padding-top: 0px;
-}
-.events .page-header, 
-.news-page .page-header,
-.single-news .page-header{
+.page-header {
    color: #3E7698;
    margin-top: 0;
 }
@@ -148,6 +141,9 @@ a {
    height: 160px;
    margin-bottom: 0;
 }
+.navbar-fixed-top .header-btn {
+   float: right;
+}
 .navbar-fixed-top .header-btn .btn-default {
    color: #ffffff;
    font-weight: 600;
@@ -224,6 +220,10 @@ a {
    background-color: #F1F0F0;
 }
 
+.border {
+   border-bottom: solid 1px #3E7698;
+}
+
 /* Jumbotron */
 
 .container .jumbotron {
@@ -239,6 +239,7 @@ a {
       -ms-behavior: url('../backgroundsize.min.htc'); 
    position: relative;
    height: 400px;
+   margin-top: 15px;
     
 }
 
@@ -418,7 +419,6 @@ a {
 .events .nav-tabs > li.active > a:hover, 
 .events .nav-tabs > li.active > a:focus {
    background-color: #3E7698;
-   border-bottom-color: #3D5869; 
    border-color: #3D5869;
    color: #ffffff;
 }
@@ -639,17 +639,23 @@ footer p {
    .events #events-list .sidebar {
       border-left: none;
    }
-   .navbar-fixed-top .navbar-nav li > a{
-      padding: 10.5px 10px;
-   } 
+
 }
 
 @media (max-width: 767px) {
    body {
-      padding-top: 125px;
+      padding-top: 190px;
+   }
+   .status-bar {
+      height: 60px;
+      z-index: 1;
    }
    .navbar-fixed-top {
-      height: 75px;
+      height: 125px;
+      top: 40px;
+   }
+   .navbar-fixed-top .navbar-header {
+      top: 0;
    }
    .navbar-fixed-top .navbar-header .navbar-brand .title {
       padding-left: 10px;
@@ -659,7 +665,7 @@ footer p {
    }
    .navbar-fixed-top .navbar-nav {
       padding-right: 10px;
-      top: -43px;
+      top: -27px;
    }
    .navbar-fixed-top .navbar-nav li {
       display: inline-block;
@@ -670,35 +676,54 @@ footer p {
    .jumbotron {
       height: 325px;
    }
-   .nav-tabs, #events-calendar {
+   .nav-tabs, #events-calendar, .border {
       display: none;
+   }
+   .navbar-fixed-top .navbar-header .navbar-brand,
+   .navbar-fixed-top .navbar-nav {
+      text-align: center;
+      width: 100%;
+   }
+   .navbar-fixed-top .header-btn {
+      float: none;
+      text-align: center;
+      width: 100%;
+      position: relative;
+         bottom: 120px;
+   }
+   .navbar-fixed-top .header-btn .btn-default {
+      display: inline-block;
+      width: 49%;
+   }
+   .navbar-fixed-top .header-btn .btn-default:first-child {
+      margin-right: 0;
    }
 }
 
 @media (max-width: 630px) {
-   body {
-      padding-top: 180px;
-   }
-   .navbar-fixed-top {
-      height: 130px;
-   }
-   .navbar-fixed-top .navbar-header .navbar-brand {
-      text-align: center;
-      width: 100%;
-   }
    .navbar-fixed-top .navbar-nav {
       float: none;
       padding: 0;
       margin: 0;
-      top: 20px;
-      text-align: center;
-      width: 100%;
+      top: -20px;
    }
    .events .panel-event .event {
       margin-left: 20%;
    }
    #events .date {
       font-size: 25px;
+   }
+}
+
+@media (max-width: 588px) {
+   body {
+      padding-top: 220px;
+   }
+   .navbar-fixed-top {
+      height: 160px;
+   }
+   .navbar-fixed-top .navbar-nav {
+      top: -25px;
    }
 }
 

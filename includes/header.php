@@ -15,10 +15,9 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <!-- Calendar -->
 
@@ -69,10 +68,10 @@
             });
         </script>
 
-        <link rel="stylesheet" type="text/css" href="../bower_components/fullcalendar/dist/fullcalendar.min.css">
-        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../bower_components/moment/min/moment.min.js"></script>
-        <script src="../bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/moment/min/moment.min.js"></script>
+        <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
     </head>
 
     <body id="home">
@@ -90,9 +89,9 @@
                             <a class="navbar-brand" href="index.php"><img class="logo"src="images/logo.png" alt="Winthrop Logo">
                                 <span class="title">Winthrop Medical Staff</span></a>
                         </div>
-                        <div class="header-btn pull-right">
-                            <a href="#" class="btn btn-default find-doctor" role="button">Find A Doctor</a>
-                            <a href="#" class="btn btn-default member-login" role="button">Member Login</a>
+                        <div class="header-btn">
+                            <a href="http://doctors.winthrop.org/" class="btn btn-default find-doctor" role="button" target="_blank">Find A Doctor</a>
+                            <a href="login.php" class="btn btn-default member-login" role="button">Member Login</a>
                         </div>
 
                     </div>
@@ -101,9 +100,9 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <ul class="nav navbar-nav">
-                            <li><a href="#about" class="active">Home</a></li>
-                            <li><a href="#">Membership</a></li>
-                            <li><a href="#">Leadership</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="membership.php">Membership</a></li>
+                            <li><a href="leadership.php">Leadership</a></li>
                             <li><a href="events.php">Events</a></li>
                             <li><a href="news.php">News</a></li>
                             <li><a href="#contact">Contact Us</a></li>
@@ -111,6 +110,6 @@
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
-            <div style="border-bottom: solid 1px #3E7698;"></div>
+            <div class="border"></div>
         </nav>
         <!-- End Nav -->
